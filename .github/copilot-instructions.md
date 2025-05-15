@@ -18,11 +18,8 @@ Repository: AgX.Resources
 - Always use `git agx-ai-commit` instead of `git commit` for commits made by AI.
   A draft of the commit message must be generated before running the command.
 - Follow the [Commit Specification](../.agx/docs/conventions/Commits.md) for commit messages.
-- When starting a workflow, check the location of the terminal.
-  When running ai workflows on submodules, ensure you are in the correct submodule directory.
-  - At the start of a workflow targeting a submodule, `cd` into the submodule directory once.
-  - Run all subsequent commands in that workflow from the current directory without additional `cd`.
-  - Only `cd` again when returning to the workflow root or changing context.
+- When running ai workflows with git submodules, check the location of the terminal if a command fails and try again.
+- When running a workflow for a submodule, change into the submodule directory and run the workflow there.
 
 ## Documentation
 - Use emojis sparingly and only when appropriate.
